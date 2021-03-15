@@ -1,0 +1,37 @@
+<div class="m-3 shadow-lg rounded">
+    <div class="row card">
+        <div class="card-header text-center">
+            <div ng-include="'views/navigation.htm'"></div>
+        </div>
+        <div class="col-md-12">
+            <div class="m-3 table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Visibility</th>
+                            <th scope="col">Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in products">
+                            <th scope="row">{{item.productCode}}</th>
+                            <th scope="row">{{item.name}}</th>
+                            <th scope="row">{{item.price}}</th>
+                            <th scope="row">{{item.description}}</th>
+                            <th scope="row">{{item.stock}}</th>
+                            <th scope="row">{{item.status}}</th>
+                            <th scope="row">{{item.visibility}}</th>
+                            <th scope="row">{{item.category_id}}</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="m-3 shadow-lg rounded">
+	<div class="row">
+		<div class="col-md-6"></div>
+		<div class="col-md-4">
+			<div class="card text-center m-3 shadow-lg p-3 mb-5 bg-body rounded">
+				<div class="card-header">
+					Add User
+				</div>
+				<div class="card-body">
+					<form>
+						<div class="mb-3">
+							<input type="text" class="form-control" ng-model="username" id="username"
+								placeholder="username">
+						</div>
+						<div class="mb-3">
+							<input type="password" class="form-control" ng-model="password" id="password"
+								placeholder="password">
+						</div>
+						<div class="mb-3">
+							<input type="password" class="form-control" ng-model="cpassword" id="cpassword"
+								placeholder="confirm password">
+						</div>
+						<div class="mb-3">
+							<select class="form-select" ng-model="roles" aria-label="Default select">
+								<option value="1">ADMIN</option>
+								<option value="2">USER</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<button type="submit" class="btn btn-success form-control" ng-click="addUser()">Add
+								User</button>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer text-muted">
+					<div>
+						<a href="#!login" class="card-link">Login</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+</div>

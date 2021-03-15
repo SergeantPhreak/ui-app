@@ -10,8 +10,16 @@ app.config(function($routeProvider) {
       templateUrl : "views/login.htm",
       controller : "userCtrl"
     })
-    .when("/register", {
-      templateUrl : "views/register.htm",
+    .when("/adduser", {
+      templateUrl : "views/adduser.htm",
       controller : "userCtrl"
+    })
+    .when("/sale", {
+      templateUrl : "views/sale.htm",
+      controller : "appCtrl"
+    })
+    .when("/products", {
+      templateUrl : "views/products.htm",
+      controller : "appCtrl"
     });
   });
