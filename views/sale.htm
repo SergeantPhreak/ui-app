@@ -6,36 +6,50 @@
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="name">
-                    </div>
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="contact">
-                    </div>
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="sale">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="placeholder">
-                    </div>
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="demo">
-                    </div>
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="dummy">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="placeholder">
-                    </div>
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="demo">
-                    </div>
-                    <div class="m-3">
-                        <input class="form-control" type="text" id="" placeholder="dummy">
+                    <div class="row m-3">
+                        <div class="col-md-6 card-body">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" ng-model="search_string" id="search_product" placeholder="search ...">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Product Code</label>
+                                <input class="form-control" type="text" placeholder="{{productCode}}" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Product Name</label>
+                                <input class="form-control" type="text" placeholder="{{name}}" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Price (Rs.)</label>
+                                <input class="form-control" type="text" placeholder="{{price}}" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Description</label>
+                                <input class="form-control" type="text" placeholder="{{description}}" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6 card-body">
+                            <div class="mb-3">
+                                <input class="form-control btn btn-primary" type="submit" ng-click="search()" id="searchbtn" value="Search">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Stock</label>
+                                <input class="form-control" type="text" placeholder="{{stock}}" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Status</label>
+                                <input class="form-control" type="text" placeholder="{{status}}" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Visibility</label>
+                                <input class="form-control" type="text" placeholder="{{visibility}}" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Category</label>
+                                <input class="form-control" type="text" placeholder="{{category_id}}" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
                     </div>
                 </div>
             </div>

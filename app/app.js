@@ -21,5 +21,13 @@ app.config(function($routeProvider) {
     .when("/products", {
       templateUrl : "views/products.htm",
       controller : "appCtrl"
+    })
+    .when("/customers", {
+      templateUrl : "views/customers.htm",
+      controller : "appCtrl"
+    })
+    .when("/suppliers", {
+      templateUrl : "views/suppliers.htm",
+      controller : "appCtrl"
     });
   });
