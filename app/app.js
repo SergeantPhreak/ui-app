@@ -10,6 +10,10 @@ app.config(function($routeProvider) {
       templateUrl : "views/login.htm",
       controller : "userCtrl"
     })
+    .when("/logout", {
+      templateUrl : "views/logout.htm",
+      controller : "logoutCtrl"
+    })
     .when("/adduser", {
       templateUrl : "views/adduser.htm",
       controller : "userCtrl"

@@ -8,6 +8,23 @@ app.controller("homeCtrl", function ($scope, $http, $cookies) {
 
 });
 
+
+app.controller("logoutCtrl", function($scope, $http, $cookies, $location){
+    $scope.username = $cookies.get('username');
+    if ($scope.username != undefined) {
+        loggedIn = true;
+    } else {
+       
+    }
+    setMenuItems();
+
+    $scope.logout = function () {
+        $cookies.remove('username');
+        loggedIn = false;
+        $location.path("/login");
+    }
+});
+
 app.controller("userCtrl", function ($scope, $http, $cookies, $location) {
     $scope.username = $cookies.get('username');
     if ($scope.username != undefined) {
